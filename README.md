@@ -28,6 +28,7 @@ Uber API for fare costs
 Greyhound webscraping
 
 airport_data_final_pandas_database.csv : airport info (location)
+\newline
 airport_distance_final_pandas_database.csv : closest airport to each university 
 cps_data : top 100 schools attended by CPS seniors
 
