@@ -11,11 +11,11 @@ import ast
 #make sure you install the approriate library (uber, google etc) on the VM for the demo.
 
 ############# UBER API
-session = Session(server_token='vGZWQfF6e_h1n8khFs2uCN6XJCYmWb4dAEPnq0db') #UBER KEY
+session = Session(server_token='API KEY') #UBER KEY
 client = UberRidesClient(session)
 
 ############ GOOGLE API
-gmaps = googlemaps.Client(key='AIzaSyAukdu1BlNyNgreb97Mv26rbQmT6awNjaE') #GOOGLE KEY
+gmaps = googlemaps.Client(key='API KEY') #GOOGLE KEY
 
 ################################################################################################################
 
