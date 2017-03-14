@@ -6,7 +6,7 @@
 # In[166]:
 
 # import googlemaps
-# gmaps = googlemaps.Client(key="AIzaSyA7CqI3UK8sWAmiApH9shd2M7Rl7acOBzo", timeout=None)
+# gmaps = googlemaps.Client(key="API KEY", timeout=None)
 # import pandas as pd
 
 
@@ -113,79 +113,3 @@
 # In[178]:
 
 # airport_distance_final_pandas.to_csv("airport_distance_final_pandas_database.csv", index=False)
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
