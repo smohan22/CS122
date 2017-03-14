@@ -15,7 +15,6 @@
 # import urllib
 # import json
 # import ast
-# #make sure you install the approriate library (uber, google etc) on the VM for the demo.
 
 # ############# UBER API
 # session = Session(server_token='INSERT TOKEN HERE')
@@ -1025,9 +1024,6 @@
 # In[40]:
 
 # s.split("-")[0][1:]
-
-
-# In[ ]:
 
 
 
