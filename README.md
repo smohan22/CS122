@@ -3,9 +3,9 @@
 # Team Wildcards*
 
 # Group Members:
-Guillermo Renna
-Ibrahim Gabr
-Sunjoo Lee
+Guillermo Renna    
+Ibrahim Gabr    
+Sunjoo Lee    
 Shambhavi Mohan
 
 # Requirements:
