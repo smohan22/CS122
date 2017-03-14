@@ -9,7 +9,7 @@ Sunjoo Lee
 Shambhavi Mohan
 
 # Requirements:
-You are using Python 3.0.    
+You are using IPython 3.5.2    
 You are using a VirtualMachine where you will download/install requirements found in requirements.txt
 
 # Using COSTLY
