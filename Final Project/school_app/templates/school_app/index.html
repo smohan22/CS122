@@ -1,0 +1,84 @@
+<!--
+    Main Page where you enter details - start and end date, number of people, etc. 
+-->
+{% load staticfiles %}
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/school_app.css' %}">
+    <title>visiting schools</title>
+</head>
+
+
+{% load static %}
+<img src="{% static "media/3.jpg" %}" alt="My image1"style="width:1850px;height:400px;">
+
+
+<h1 id="shortest">COSTLY</h1>
+<p> <i>Visiting College? </i></p>
+<p> Calcuate how expensive it will be!</p>
+
+
+
+<form action="/school_app/choice/" method="POST">
+    {% csrf_token %} 
+    <fieldset>
+    <p id="heading"> Enter Itinerary </p>
+    <label for="num_travelling">Number of people travelling: </label>
+    <input id="num_travelling" type="number" name="num_travelling" value={{ current_name }}>
+    <br>
+    <label for="home_addr">Start Address (Chicago only: </label>
+    <input id="home_addr" type="text" name="home_addr" value={{ current_name }}>
+    <br>
+    <label for="school1">First School to Visit: </label>
+    <select name="school1">
+    {% for school in schools %}
+        <option value="{{ school.name}}">{{ school.name }}</option>
+    {% endfor %}
+    </select>
+    <br>
+    <label for="depart_home">Date of Departure from Home: </label>
+    <input id="depart_home" type="date" name="depart_home" placeholder = "yyyy-mm-dd" value={{ current_name }} >
+    <br>
+    <br>
+    <label for="depart_school1">Date of Departure School1: </label>
+    <input id="depart_school1" type="date" name="depart_school1" placeholder = "yyyy-mm-dd"  value={{ current_name }}>
+    <br>
+    <br>
+<!-- Hashed out code for school 2
+    <label for="school2">Second School to Visit: (optional) </label>
+    <select name="school2">
+    {% for school in schools %}
+        <option value="{{ school.name}}">{{ school.name }}</option>
+    {% endfor %}
+    </select>
+    <br>
+    <label>Date of Arrival at School2: </label>
+    <p id="arrival">Same as departure Date for School1</p>
+    <label for="depart_school2">Date of Departure from School2:</label>
+    <input id="depart_school2" type="text" name="depart_school2" placeholder = "yyyy-mm-dd" value={{ current_name }}>
+    <br>-->
+    <br>
+    <br>
+    <p> Please mention hotel options if we think you might need hotels </p>
+    <label for = "hotel_pref"> Hotel Preference:</label>
+    <select name="hotel_pref">
+    {% for preference in hotel_pref_context %}
+        <option value="{{ preference.cost}}">{{ preference.cost}}</option>
+    {% endfor %}
+    <select/>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+</fieldset>
+
+
+</form>
+
+
+</html>
+</body>

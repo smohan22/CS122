@@ -1,0 +1,39 @@
+<!--
+Page which provides choices for hotels and flights
+-->
+{% load staticfiles %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/school_app.css' %}">
+    <title>RESULT</title>
+</head> 
+
+<img src="{% static "media/3.jpg" %}" alt="My image1"style="width:1850px;height:400px;">
+
+<h1 id="shortest">COSTLY</h1>
+<h2> <i> Make a Choice </i></h2>
+
+
+<form action = "/school_app/result/" method = "POST">
+                {% csrf_token %}
+                <label for="flights">FLIGHTS </label>
+                <select name="flights">
+                {% for flight in result.flights %}
+                    <option value="{{ flight}}">{{ flight }}</option>
+                {% endfor %}
+                </select>
+                <br>
+                
+                <label for="hotels">HOTELS </label>
+                <select name="hotels">
+                {% for hotel in result.hotels %}
+                    <option value="{{ hotel}}">{{ hotel }}</option>
+                {% endfor %}
+                </select>
+                <br>
+                
+            <input type = "submit" value = "Submit">
+             </form> 
+
+</html>
+</body>
