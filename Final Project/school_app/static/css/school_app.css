@@ -1,0 +1,83 @@
+body {
+  background-color: #940000;
+  text-align: center;
+  font: 20px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+
+} 
+#shortest {
+  background-color: #7a0000;
+  padding: 10px;
+  margin-top: -2px;
+}
+#heading {
+  font: 30px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff; 
+  text-align: center;
+  padding: 20px;
+  margin-right: 80px;
+
+}
+form {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  font: 18px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  text-align: left;
+  padding-left: 100px;
+  margin: auto;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+#arrival_date1, #departure_date1 {
+  height: 30px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+input {
+  color: #940000;
+  display: inline-block;
+  float: left;
+    padding: 4px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 16px/100% Verdana, Tahoma, sans-serif; 
+    width: 400px; 
+    background: #FFFFFF; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+option {
+  margin-left: 20px;
+  width: 370px;
+  color: #940000;
+}
+select {
+  background-color: #ffffff;
+  color: #940000;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+
+}
+#arrival {
+  margin-top: 20px;
+  margin-left: 262px;
+}
+#submit {
+  width: 200px;
+  height: 50px;
+  font-size: 28px;
+  color: #940000;
+  display: inline-block;
+  margin-left: 330px;
+  margin-bottom: 50px;
+}
