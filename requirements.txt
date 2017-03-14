@@ -1,0 +1,10 @@
+pandas==0.19.1
+django==1.10.5
+plotly==2.0.5
+squarify==0.2.0
+googlemaps==2.4.6
+uber_rides==0.4.1
+urlib #couldnt find version number - assume the latest as of 03/14/2017
+urlib3 #couldnt find version number - assume the latest as of 03/14/2017
+ast #couldnt find version number - assume the latest as of 03/14/2017
+requests==2.13.0
