@@ -9,7 +9,7 @@
 
 # import squarify
 
-# plotly.tools.set_credentials_file(username='igabr', api_key='X9WSMxsuICEbuSNKm20n')
+# plotly.tools.set_credentials_file(username='igabr', api_key='API KEY')
 
 # x = 0.
 # y = 0.
@@ -56,7 +56,6 @@
 #     if counter >= len(color_brewer):
 #         counter = 0
 
-# # # For hover text
 # trace0 = go.Scatter(
 #     x = [ r['x']+(r['dx']/2) for r in rects ], 
 #     y = [ r['y']+(r['dy']/2) for r in rects ],
@@ -77,10 +76,7 @@
 # # With hovertext
 # figure = dict(data=[trace0], layout=layout)
 
-# py.iplot(figure, filename='squarify-treemap')
-
-
-# In[ ]:
-
+# py.iplot(figure, filename='squarify-treemap') #this command is needed for Jupyter Notebook implementation.
+# Differs for VM implementation
 
 
